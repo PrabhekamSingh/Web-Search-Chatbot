@@ -1,0 +1,8 @@
+langgraph
+streamlit
+langchain
+langchain-google-genai
+dotenv
+langchain-tavily
+streamlit-chat
+watchdog
