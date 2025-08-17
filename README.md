@@ -7,12 +7,10 @@ A Streamlit-based chatbot powered by Google's Gemini LLM and enhanced with real-
 
 ## Features
 
-- **Conversational AI**: Uses Gemini (`gemini-2.0-flash-exp`) via LangChain for natural language chat.
+- **Conversational AI**: Uses Gemini (`gemini-2.0-flash-exp`) via LangChain/Langgraph for natural language chat.
 - **Web Search Tool**: Integrates Tavily for up-to-date web search results.
 - **Session Memory**: Remembers conversation history per user session.
 - **Modern UI**: Chat bubbles, theme toggles (Day/Night/Reading), and multipage navigation.
-- **"Buy Me a Coffee"**: Support the developer via a sidebar button.
-
 ---
 
 ## Setup
@@ -83,12 +81,6 @@ streamlit basic_chatbot/
 - [LangChain](https://python.langchain.com/)
 - [Google Gemini](https://ai.google.dev/)
 - [Tavily Search](https://www.tavily.com/)
-
----
-
-## License
-
-MIT License
 
 ---
 
