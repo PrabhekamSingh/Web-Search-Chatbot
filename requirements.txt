@@ -6,3 +6,5 @@ dotenv
 langchain-tavily
 streamlit-chat
 watchdog
+cryptography
+streamlit-extras

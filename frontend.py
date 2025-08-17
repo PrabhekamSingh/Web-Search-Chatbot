@@ -1,6 +1,9 @@
 import streamlit as st
 from backend import chatbot
 from langchain_core.messages import HumanMessage
+import streamlit as st
+from streamlit.components.v1 import html
+import os
 
 
 # Sidebar navigation
@@ -43,9 +46,22 @@ if page == "Chatbot":
 elif page == "About":
     st.title("About")
     st.write("This is a Gemini-powered web search chatbot built with Streamlit and LangGraph.")
+    button = """
+    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="prabhekamsingh" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+    """
+
+    html(button, height=70, width=220)
+
     st.markdown(
         """
-        [![Buy Me a Coffee](https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=YOUR_USERNAME&button_colour=FFDD00&font_colour=000000&font_family=Arial&outline_colour=000000&coffee_colour=ffffff)](https://www.buymeacoffee.com/YOUR_USERNAME)
+        <style>
+            iframe[width="220"] {
+                position: fixed;
+                bottom: 60px;
+                right: 40px;
+            }
+        </style>
         """,
-        unsafe_allow_html=True
+        unsafe_allow_html=True,
     )
+

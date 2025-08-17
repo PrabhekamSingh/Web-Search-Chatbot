@@ -8,8 +8,11 @@ from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.graph.message import add_messages
 from dotenv import load_dotenv
 from langchain_tavily import TavilySearch
-
+import streamlit as st
 load_dotenv()
+
+os.environ["GOOGLE_API_KEY"] == st.secrets["GOOGLE_API_KEY"],
+os.environ["TAVILY_API_KEY"] == st.secrets["TAVILY_API_KEY"]
 
 # Initialize Tavily Search Tool
 @tool
