@@ -35,7 +35,7 @@ tools = [tavily_search_tool]
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.0-flash-exp",  # Updated model name
     temperature=0.1,
-    max_tokens=1000,
+    max_tokens=10000,
     google_api_key=os.getenv("GOOGLE_API_KEY")
 ).bind_tools(tools=tools)
 
